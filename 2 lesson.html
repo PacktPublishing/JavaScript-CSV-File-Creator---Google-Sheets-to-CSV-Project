@@ -1,0 +1,29 @@
+<!DOCTYPE html><html><head><style></style></head><body>
+   <div class="output"></div>
+   <button>Download CSV File</button>
+    <script>
+    let myData = [
+        ["Title","Content"],
+        ["Row1","Content1"],
+        ["Row2","Hello World"],
+        ["Row3","JavaScript"],
+    ];
+    const output = document.querySelector(".output");
+    const btn = document.querySelector("button");
+    btn.style.backgroundColor = "green";
+    btn.style.color = "white";
+    btn.style.padding = "15px";
+    btn.style.fontSize = "1.5em";
+    btn.addEventListener("click",function(){
+        createCSV(myData);
+    })
+    
+    function createCSV(data){
+        console.log(data);
+        
+    }
+    
+    
+    
+    </script>
+</body></html>
